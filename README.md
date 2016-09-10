@@ -4,6 +4,8 @@
 npm i -g imgfy
 ```
 
+[![NPM](https://nodei.co/npm/imgfy.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/imgfy/)
+
 # Usage: imgfy [options]
 
   Options:
