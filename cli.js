@@ -20,7 +20,7 @@ if (program.content) {
 }
 
 
-app(content)
+app({content: content})
   .then((value) => {
     program.open ? opn(value) : console.log(colors.green(value));
     process.exit();

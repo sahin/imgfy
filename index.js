@@ -5,16 +5,17 @@ var opn = require('opn');
 
 var BASE_URL = 'https://imgfy.xyz/';
 
-module.exports = function (content = null, file = false, open = false) {
+module.exports = function (obj) {
   return new Promise(function(resolve, reject) {
-    if (file) {
+    if (obj.file) {
       var fs = require('fs');
-      content = fs.readFileSync(file)
+      var content = fs.readFileSync(obj.file)
       content = JSON.parse(content);
+      obj.content = content;
     }
-    if (content !== null) {
-      var url = `${BASE_URL}?content=${JSON.stringify(content)}`;
-      if (open) {
+    if (obj.content !== null) {
+      var url = `${BASE_URL}?content=${JSON.stringify(obj.content)}`;
+      if (obj.open) {
         opn(url);
         process.exit();
       } else {
