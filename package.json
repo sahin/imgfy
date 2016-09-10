@@ -30,10 +30,14 @@
   },
   "homepage": "https://github.com/cagataycali/imgfy#readme",
   "dependencies": {
+    "3x3c": "^1.0.2",
     "async": "^2.0.1",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "node-emoji": "^1.4.1",
-    "opn": "^4.0.2"
+    "opn": "^4.0.2",
+    "screenshot-stream": "^3.4.0",
+    "urlencode": "^1.1.0",
+    "webshot": "^0.18.0"
   }
 }

@@ -9,6 +9,7 @@ var program = require('commander');
 program
   .option('-o, --open', 'Open url in browser')
   .option('-c, --content <content>', 'Content file dir')
+  .option('-s, --save <save>', 'Save output image')
   .parse(process.argv);
 
 if (program.content) {
@@ -19,8 +20,13 @@ if (program.content) {
   var content = null;
 }
 
+var obj;
 
-app({content: content})
+if (program.save) {
+  obj = {content: content, save: program.save.trim()}
+}
+
+app(obj)
   .then((value) => {
     program.open ? opn(value) : console.log(colors.green(value));
     process.exit();

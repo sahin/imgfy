@@ -2,6 +2,8 @@ var async = require('async');
 var colors = require('colors');
 var emoji = require('node-emoji');
 var opn = require('opn');
+var webshot = require('webshot');
+var urlencode = require('urlencode');
 
 var BASE_URL = 'https://imgfy.xyz/';
 
@@ -21,7 +23,18 @@ module.exports = function (obj) {
       } else {
         console.log(colors.green(url))
       }
-      resolve(url);
+      if (obj.save) {
+        console.log(obj.save);
+        webshot(urlencode(url), obj.save, function(err) {
+          if (err) {
+            reject(err);
+          }
+          console.log(colors.red(`Your image saved as ${obj.save}`));
+          resolve(url);
+        });
+      } else {
+        resolve(url);
+      }
     } else {
       console.log(colors.red('Content shouldn\'t null.'))
       reject('Content shouldn\'t null.');
