@@ -95,3 +95,7 @@ app(content, false, true) // Open in browser.
   })
 
 ```
+
+Maintenance & Development [Çağatay Çalı](http://github.com/cagataycali)
+
+Made with :heart:
