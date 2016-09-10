@@ -1,6 +1,6 @@
 {
   "name": "imgfy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Imgfy url generator cli",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/cagataycali/imgfy.git"
   },
-  "bin" : {
+  "bin": {
     "imgfy": "./cli.js"
   },
   "keywords": [
