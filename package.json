@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/cagataycali/imgfy.git"
   },
+  "bin" : {
+    "imgfy": "./cli.js"
+  },
   "keywords": [
     "imgify",
     "create",
@@ -29,6 +32,7 @@
   "dependencies": {
     "async": "^2.0.1",
     "colors": "^1.1.2",
+    "commander": "^2.9.0",
     "node-emoji": "^1.4.1",
     "opn": "^4.0.2"
   }
