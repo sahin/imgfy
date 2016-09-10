@@ -12,10 +12,9 @@ npm i -g imgfy
     -o, --open               Open url in browser
     -c, --content <content>  Content file dir
 
-# Example
-
+# Demo proposal:
 ```
-imgfy --content content.json -o # Content file is : content.json, open in browser.
+imgfy -c content.json -o
 ```
 
 # Programmatically.
@@ -57,7 +56,3 @@ app(content, false, true) // Open in browser.
   })
 
 ```
-
-# Todo:
-
-@cagatay, add content example.
