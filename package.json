@@ -1,0 +1,35 @@
+{
+  "name": "imgfy",
+  "version": "1.0.0",
+  "description": "Imgfy url generator cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagataycali/imgfy.git"
+  },
+  "keywords": [
+    "imgify",
+    "create",
+    "image",
+    "easly",
+    "cli",
+    "imgify",
+    "cli",
+    "tool"
+  ],
+  "author": "Çağatay Çalı",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cagataycali/imgfy/issues"
+  },
+  "homepage": "https://github.com/cagataycali/imgfy#readme",
+  "dependencies": {
+    "async": "^2.0.1",
+    "colors": "^1.1.2",
+    "node-emoji": "^1.4.1",
+    "opn": "^4.0.2"
+  }
+}
