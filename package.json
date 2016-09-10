@@ -1,6 +1,6 @@
 {
   "name": "imgfy",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Imgfy url generator cli",
   "main": "index.js",
   "scripts": {
