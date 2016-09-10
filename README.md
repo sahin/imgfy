@@ -13,9 +13,46 @@ npm i -g imgfy
     -c, --content <content>  Content file dir
 
 # Demo proposal:
+
+## content.json's content:
+```
+{
+  "template": {
+    "backgroundImage": "url(http://res.cloudinary.com/cagatayc/image/upload/profile.jpg)",
+    "backgroundColor": "#cccccc",
+    "backgroundRepeat": "no-repeat"
+  },
+  "images": [
+    {
+      "id": 1,
+      "src": "http://res.cloudinary.com/cagatayc/image/upload/racoon.png",
+      "property": {
+        "position": "absolute",
+        "top": "152px",
+        "left": "122px",
+        "maxHeight": "37px"
+      }
+    },
+    {
+      "id": 2,
+      "src": "http://res.cloudinary.com/cagatayc/image/upload/racoon.png",
+      "property": {
+        "position": "absolute",
+        "top": "141px",
+        "left": "210px",
+        "maxHeight": "37px"
+      }
+    }
+  ]
+}
+```
+
 ```
 imgfy -c content.json -o
 ```
+
+## Output:
+![imgfy demo image](demo.png)
 
 # Programmatically.
 
